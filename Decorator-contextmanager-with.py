@@ -1,10 +1,10 @@
-https://realpython.com/blog/python/primer-on-python-decorators/
-https://jeffknupp.com/blog/2016/03/07/python-with-context-managers/
-http://preshing.com/20110920/the-python-with-statement-by-example/
+# https://realpython.com/blog/python/primer-on-python-decorators/
+# https://jeffknupp.com/blog/2016/03/07/python-with-context-managers/
+# http://preshing.com/20110920/the-python-with-statement-by-example/
 
 ################################################################
 
-1. Decorator
+# 1. Decorator
 
 ##  Put simply, decorators wrap a function, modifying its behavior. ##
 
@@ -29,10 +29,10 @@ just_some_function()
 
 #################################################################
 
-2. ContextManager
+# 2. ContextManager
 
 
-## Use case 1: Define __enter__ and __exit__ 
+## Use case 1: Define __enter__ and __exit__
 ## Implementing the Context Manager as a Class
 class File():
     def __init__(self, filename, mode):
@@ -86,15 +86,13 @@ with makeparagraph() as m:
     print('Here is some non-HTML')
 
 
-
-3. With statement
+########################################################################
+# 3. With statement
 
 with something_that_returns_a_context_manager() as my_resource:
     do_something(my_resource)
     ...
     print('done using my_resource')
-    
+
 ## more details (Exceptions etc)
 ## http://preshing.com/20110920/the-python-with-statement-by-example/
-    
-    
