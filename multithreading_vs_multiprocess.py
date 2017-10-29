@@ -23,7 +23,7 @@ for i in range(5):
 start = time.time()
 
 for current_task in task_list:
-    task_queue.put(current_url)
+    task_queue.put(current_task)
 
 # Blocks until all items in the queue have been gotten and processed.
 task_queue.join()
@@ -76,5 +76,3 @@ if __name__ == '__main__':
     p.start()
     print(parent_conn.recv())
     p.join()
-
-    
